@@ -29,5 +29,8 @@ INSERT INTO authors (name) VALUES
 ("Anthony Horowitz"),
 ("Stephen King");
 
-INSERT INTO character_books ()
-UPDATE character_books SET character_id = character.name WHERE character_id = characters.id;
+UPDATE character_books
+SET character_id = characters.name
+FROM characters
+INNER JOIN character_id ON charac
+WHERE character_id = characters.id;
