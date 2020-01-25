@@ -32,5 +32,5 @@ INSERT INTO authors (name) VALUES
 UPDATE character_books
 SET character_id = characters.name
 FROM characters
-INNER JOIN character_id ON charac
+INNER JOIN character_id ON character_books
 WHERE character_id = characters.id;
