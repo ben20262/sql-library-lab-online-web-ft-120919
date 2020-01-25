@@ -30,7 +30,7 @@ INSERT INTO authors (name) VALUES
 ("Stephen King");
 
 UPDATE character_books
-SET character_id = characters.name
+SET character_books.character_id = characters.name
 FROM characters
 INNER JOIN character_id ON character_books
 WHERE character_id = characters.id;
